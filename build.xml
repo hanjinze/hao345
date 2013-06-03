@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="refund" default="build">	
+	<property name="concat.note" value="//合并\n"></property>
+	
+	<target name='build'>
+		<mkdir dir="compatible"></mkdir>
+
+		<concat destfile="compatible/combine.js">
+			
+			<header trimleading="yes">${concat.note}</header>	
+
+			<path path="a.txt"></path>
+			<path path="b.txt"></path>
+		
+
+		</concat>
+
+
+	</target>
+
+</project>
